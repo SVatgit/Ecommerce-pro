@@ -8,41 +8,53 @@ import { DataContext } from "../../context/DataProvider.jsx";
 const LoginBox = styled(Box)`
   height: 70vh;
   width: 90vh;
+  background:#DDFFBC;
 `;
 const Image = styled(Box)`
-  background: #2874f0;
+  background: #263A29;
   height: 82.5%;
   width: 28%;
   padding: 45px 35px;
   & > p,
   & > h5 {
-    color: #ffffff;
+    color: #DDFFBC;
     font-weightt: 600;
   }
 `;
 
 const LoginButton = styled(Button)`
   text-transform: none;
-  background: #fb641b;
-  color: #fff;
+  background: #91C788;
+  color: #DDFFBC;
   height: 48px;
   border-radius: 2px;
+  transition: all 0.5s $easeInOut;
+    &:hover{
+      color: #DDFFBC;
+      background:#263A29;
+    }
 `;
 const ReqButton = styled(Button)`
   text-transform: none;
   background: #fff;
-  color: #2874f0;
+  color: #4F200D;
   height: 48px;
   border-radius: 2px;
-  box-shadow: 0 2px 4px 0 rgb(0 0 0/ 20%);
+  transition: all 0.5s $easeInOut;
+   
+    &:hover{
+      background: #263A29;
+      color:#DDFFBC;
+    }
+   
 `;
 const Text = styled(Typography)`
   font-size: 12px;
-  color: #878787;
+  color: #263A29;
 `;
 const Error = styled(Typography)`
 font-size:10px;
-color:#ff6161;
+color:red;
 line-height:0;
 margin-top:10px;
 font-weight:600;
@@ -64,7 +76,7 @@ const RightWrapper = styled(Box)`
 const Createaccount = styled(Typography)`
   font-size: 12px;
   text-align: center;
-  color: #2874f0;
+  color: #4F200D;
   font-weight: 600;
   cursor: pointer;
 `;
@@ -133,6 +145,8 @@ const Logindialog = ({ open, setOpen }) => {
       setError(true);
     }
   };
+
+  // const Emailotpsend=asyn
 
   return (
     <Dialog
@@ -204,6 +218,7 @@ const Logindialog = ({ open, setOpen }) => {
                 name="email"
                 label="Enter Email"
               />
+               {/* <Button>Send OTP</Button> */}
               <TextField
                 variant="standard"
                 onChange={(e) => onInputChange(e)}

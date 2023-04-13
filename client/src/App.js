@@ -5,6 +5,9 @@ import DataProvider from "./context/DataProvider.jsx";
 import { BrowserRouter, Routes,Route} from "react-router-dom";
 import DetailView from "./components/details/DetailView.jsx";
 import { Cart } from "./components/cart/Cart.jsx";
+import ListPage from "./components/header/ListPage.jsx";
+
+
 
 
 
@@ -21,6 +24,7 @@ function App() {
             <Route path='/' element ={<Home/>}/>
             <Route path='/product/:id' element ={<DetailView/>}/>
             <Route path='/cart' element ={<Cart/>}/>
+            <Route path='/lastpage' element ={<ListPage/>}/>
           </Routes>
         </Box>
       </BrowserRouter>

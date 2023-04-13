@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Menu} from '@mui/icons-material';
 import { useState } from "react";
 const StyledHeader = styled(AppBar)`
-  background: #3140e8;
+  background:  #263A29;
   height: 58px;
 `;
 const Component = styled(Link)`
@@ -17,6 +17,7 @@ const Component = styled(Link)`
 const SubHeading = styled(Typography)`
   font-size: 10px;
   font-style: italic;
+  color:#DDFFBC;
 `;
 const CustombuttonWrapper = styled(Box)(({theme})=>({
   margin:' 0 5% 0 auto',
@@ -75,7 +76,7 @@ const Header = () => {
           <Box>
             <SubHeading>
               Explore&nbsp;
-              <Box component="span" style={{ color: "#FFE500" }}>
+              <Box component="span" style={{ color: "#91C788" }}>
                 Plus
               </Box>
             </SubHeading>

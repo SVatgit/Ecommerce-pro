@@ -31,4 +31,25 @@ export const userSignUp = async (request, response) => {
 }
 
 
+// const emailsend=async(req,res)=>{
+//     let data=await User.findOne({email:req.body.email})
+//     const responseType={};
+//     if(data)
+//     {
+//         let otp=Math.floor((Math.random()*10000)+1);
+//         let otpData=new Otp({
+//                 email:req.body.email,
+//                 code:otp,
+//                 expireIn:new Date().getTime()+300*1000
+//         })
+//         let otpResponse=await otpData.save();
+//         responseType.statusText="success"
+//         responseType.mesage="please check your email id"
 
+//     }
+//     else{
+//         responseType.statusText="Error"
+//         responseType.mesage="Email Id not Exist"
+//     }
+//     res.status(200).json(responseType)
+// }

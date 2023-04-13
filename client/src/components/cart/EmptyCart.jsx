@@ -3,8 +3,9 @@ import { Typography, Box, styled } from '@mui/material';
 const Component = styled(Box)`
     width: 80%%;
     height: 65vh;
-    background: #fff;
+    background: #52734D;
     margin: 80px 140px;
+    color:#DDFFBC;
 `;
 
 const Container = styled(Box)`
@@ -18,10 +19,10 @@ const Image = styled('img')({
 
 
 const EmptyCart = () => {
-    const imgurl = 'https://rukminim1.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90';
+    const imgurl = 'https://o.remove.bg/downloads/904d5a66-630a-4ebb-8de4-eb7e0689019a/Empty_Cart-removebg-preview.png';
     
     return (
-        <Component>
+        <Component >
             <Container>
                 <Image src={imgurl} />
                 <Typography>Your cart is empty!</Typography>

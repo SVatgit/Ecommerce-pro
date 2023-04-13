@@ -2,7 +2,7 @@ import {useEffect} from 'react';
 import { useDispatch ,useSelector} from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { getProductDetails } from '../../redux/actions/productAction.js';
-import { Box ,Typography,styled,Grid} from "@mui/material";
+import { Box ,styled,Grid} from "@mui/material";
 import ActionItem from './ActionItem.jsx';
 import { ProductDetail } from './ProductDetail.jsx';
 const Component = styled(Box)`
@@ -11,16 +11,12 @@ const Component = styled(Box)`
 `;
 
 const Container = styled(Grid) (({theme})=>({
-    background: '#FFFFFF',
+    background: '#DDFFBC',
     display: 'flex' ,
     [theme.breakpoints.down('md')]:{
         margin:0
     }
 }))
-    
-    
-   
-
 const RightContainer = styled(Grid)`
     margin-top: 50px;
     & > p {

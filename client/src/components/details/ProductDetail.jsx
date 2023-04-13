@@ -28,7 +28,7 @@ vertical-align:baseline;
 
 
 export const ProductDetail = ({product}) => {
-    const fassured = 'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png';
+    // const fassured = 'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png';
     const date=new Date(new Date().getTime()+(5*24*60*60*1000))
     const adURL = 'https://rukminim1.flixcart.com/lockin/774/185/images/CCO__PP_2019-07-14.png?q=50';
 
@@ -37,7 +37,7 @@ export const ProductDetail = ({product}) => {
     <Typography>{product.title.longTitle}</Typography>
                         <Typography style={{marginTop: 5, color: '#878787', fontSize: 14 }}>
                             8 Ratings & 1 Reviews
-                            <Box component="span"><img src={fassured} style={{width:77,marginLeft:20}}/></Box>
+                           
                         
                             </Typography>
                             <Typography>

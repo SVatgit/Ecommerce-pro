@@ -1,11 +1,17 @@
 import { Box ,styled, Typography} from '@mui/material'
 import React from 'react'
 import {navData} from '../../constants/data.js'
+// import ListPage from '../header/ListPage.jsx';
+
+
+
+
 const Component=styled(Box)(({theme})=>({
 display:'flex',
 margin: '55px 130px 0 130px',
 justifyContent:'space-between',
 overflow:'hidden',
+cursor:'pointer',
 
 [theme.breakpoints.down('lg')]:{
    margin:'0',
@@ -23,14 +29,15 @@ font-family: inherit;
 `
 
 const NavBar = () => {
-  return (
-    <Box style={{background:'#fff'}}>
 
-    <Component>
+  return (
+    <Box style={{background:'#DDFFBC'}}>
+
+    <Component to = "/listpage">
         {
           navData.map(data =>(
-            <Conatiner>
-                    <img src={data.url} alt="nav" style={{width:64}}/>
+            <Conatiner >
+                    <img src={data.url} alt="nav" style={{width:64}} />
                     <Text>{data.text}</Text>
                     </Conatiner>
             ))

@@ -23,36 +23,46 @@ const responsive = {
 
 const Component = styled(Box)`
 margin-top:5px;
-background:#FFFFFF;
+background:#DDFFBC;
 
 `;
 const Deal = styled(Box)`
 padding:15px 20px;
 display : flex;
+background:#263A29;
 `
 const Timer = styled(Box)`
 display : flex;
 margin-left:10px;
 align-items: center;
-color#7f7f7f;
+color:#DDFFBC;
 `
 const ViewAllButton = styled(Button)`
 margin-left:auto;
-background-color: #2876f0;
-font-weight: 600;
+background-color: #DDFFBC;
+color:#263A29;
+font-weight: 700;
 border-radius:2px;
 font-size: 13px;
+transition: all 0.5s $easeInOut;
+   
+    &:hover{
+      background: #52734D;
+      color:#DDFFBC;
+    }
 `;
 const DealText = styled(Typography)`
  font-size 22px;
  font-weight: 600;
  margin-right:25px;
  line-height:32px;
+ color:#DDFFBC;
 `;
 const Image=styled('img')
 ({
 width:'auto',
 height:150
+
 
 
 });
@@ -68,12 +78,12 @@ const Slide = ({ products,title ,timer}) => {
 
     }
  return (
-    <Component>
+    <Component >
       <Deal>
         <DealText>{title}</DealText>
         {
           timer && <Timer>
-          <img src={timerURL} alt=" timer" style = {{width:24}}/>
+          <img src={timerURL} alt=" timer" style = {{width:24 }}/>
           <Countdown date={Date.now() + 5.04e+7} renderer ={renderer}/>
            </Timer>
         }
@@ -100,9 +110,9 @@ const Slide = ({ products,title ,timer}) => {
           <Link to={`product/${product.id}`} style={{textDecoration:'none'}}>
           <Box textAlign="centre" style={{padding:"25px 15px"}}>
             <Image src={product.url} alt="products" />
-            <Text style={{fontweight :600, color:"#212121"}}> {product.title.shortTitle} </Text>
-            <Text style={{color:"green"}}> {product.discount} </Text>
-            <Text style={{padding:"25px 15px" , opacity:0.5}}> {product.tagline} </Text>
+            <Text style={{fontweight :600, color:"#263A29"}}> {product.title.shortTitle} </Text>
+            <Text style={{color:"black"}}> {product.discount} </Text>
+            <Text style={{padding:"25px 15px" , color:"#263A29"}}> {product.tagline} </Text>
           </Box>
           </Link>
         ))}

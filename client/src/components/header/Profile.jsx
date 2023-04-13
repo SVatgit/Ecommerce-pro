@@ -10,7 +10,12 @@ const Component = styled(Menu)`
 const Logout = styled(Typography)`
   font-size: 12px;
   margin-left: 20px;
+  color:"#263A29";
 `;
+
+
+
+
 const Profile = ({account , setAccount}) => {
   const [open, setOpen] = useState(false);
 
@@ -26,15 +31,14 @@ const Profile = ({account , setAccount}) => {
   return (
     <>
       <Box onClick={handleClick}>
-        <Typography style={{ marginTop:"2", cursor:"pointer" }}>
+        <Typography style={{ marginTop:"2", cursor:"pointer", color:"#DDFFBB"}}>
           {account}
         </Typography>
       </Box>
-      <Component
-       anchorEl={open} open={Boolean(open)} onClose={handleClose}>
-        <MenuItem onClick={() => {handleClose(); LogoutUser();}}>
+      <Component anchorEl={open} open={Boolean(open)} onClose={handleClose}> 
+        <MenuItem onClick={() => {handleClose(); LogoutUser();}} style={{color:"#263A29" , background:"#DDFFBB"}}>
           <PowerSettingsNewIcon color="primary" fontSize="small"/>
-          <Logout> Logout</Logout>
+          <Logout > Logout</Logout>
         </MenuItem>
       </Component>
     </>

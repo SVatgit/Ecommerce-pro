@@ -64,8 +64,8 @@ const StyledButton = styled(Button)(({theme})=>({
 
     <LeftConatiner>
         <Image src={product.detailUrl} alt="product" />
-       <StyledButton variant="contained" onClick={()=>addItemToCart()} style={{marginRight: 10, background: '#ff9f00'}}><Cart />Add To Cart</StyledButton>
-       <StyledButton variant="contained" onClick={()=>buyNow()} style={{background: '#fb641b'}}><Flash />Buy Now</StyledButton>
+       <StyledButton variant="contained" onClick={()=>addItemToCart()} style={{marginRight: 10, background: '#263A29', color:"#DDFFBC"}}><Cart />Add To Cart</StyledButton>
+       <StyledButton variant="contained" onClick={()=>buyNow()} style={{background: '#91C788',color:"#263A29"}}><Flash />Buy Now</StyledButton>
     </LeftConatiner>
    
   )

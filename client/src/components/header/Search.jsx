@@ -8,7 +8,7 @@ import {getProducts}from "../../redux/actions/productAction"
 import {Link} from 'react-router-dom';
 import {Webcam} from 'react-webcam';
 const SearchContainer = styled(Box)`
-background : #ffffff;
+background : #DDFFBC;
 width:38%;
 border-radius:3px;
 margin-left : 10px;
@@ -18,9 +18,10 @@ const InputSearchBase= styled(InputBase)`
 padding-left:20px;
 width:100%;
 font-size:unset;
+color:#263A29;
 `;
 const SearchIconWrapper=styled(Box)`
-color:blue;
+color:#263A29;
 padding:9px;
 display:flex;
 `;
@@ -28,8 +29,8 @@ display:flex;
 const ListWrapper=styled(List)
 `
 position:absolute;
-background:#FFFFFF;
-color:#000;
+background:#263A29;
+color:#DDFFBB;
 margin-top:36px;
 
 `

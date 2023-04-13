@@ -36,14 +36,20 @@ const Wrapper = styled(Box)(({theme})=>({
    
 
 const LoginButton = styled(Button)`
-    color :#2874f0;
-    background: #FFF;
+    color :#263A29;
+    background: #DDFFBC;
     text-transform :none;
     font-weight: 600;
     border-radius: 2px;
     padding: 5px 40px;
     height: 32px;
     box-shadow: none;
+    transition: all 0.5s $easeInOut;
+   
+    &:hover{
+      background: #52734D;
+      color:#DDFFBC;
+    }
 `;
 const CustomButtons = () => {
     
@@ -60,17 +66,20 @@ const CustomButtons = () => {
         <Wrapper>
             {
                 account? <Profile account={account} setAccount={setAccount}/>:
-                <LoginButton variant="contained" onClick={() => openDialog()}>Login</LoginButton>
+
+                <LoginButton variant="contained" onClick={() => openDialog()}>
+                Login
+                </LoginButton>
                 
             }
-            <Typography style={{ marginTop: 3, width: 135 }}>Become a Seller</Typography>
-            <Typography style={{ marginTop: 3 }}>More</Typography>
+            <Typography style={{ marginTop: 3, width: 135 ,color:'#DDFFBC'}}>Become a Seller</Typography>
+            <Typography style={{ marginTop: 3 ,color:"#DDFFBC"}}>More</Typography>
             
             <Container to ="/cart">
             <Badge badgeContent={cartItems?.length} color="secondary">
-                  <ShoppingCart/>
+                  <ShoppingCart style={{color:'#DDFFBC'}}/>
              </Badge>   
-                <Typography style={{ marginLeft: 10 }}>Cart</Typography>
+                <Typography style={{ marginLeft: 10 ,color:'#DDFFBC '}}>Cart</Typography>
             </Container>
             <LoginDialog open={open} setOpen={setOpen} />
         </Wrapper>

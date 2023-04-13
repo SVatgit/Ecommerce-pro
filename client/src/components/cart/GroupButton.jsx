@@ -3,11 +3,14 @@ import React from 'react'
 
 const Component=styled(ButtonGroup)
 `
-margin-top:30px
+margin-top:30px;
+// background: #263A29;
+// color:#DDFFBB;
 `
 const StyledButton=styled(Button)
 `
-border-radius:50%
+border-radius:50%;
+// border-color:red;
 
 `
 

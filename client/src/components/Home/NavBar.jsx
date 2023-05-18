@@ -1,10 +1,7 @@
 import { Box ,styled, Typography} from '@mui/material'
-import React from 'react'
+import React, { useState } from 'react'
 import {navData} from '../../constants/data.js'
-// import ListPage from '../header/ListPage.jsx';
-
-
-
+import Listdialog from '../login/Listdialog.jsx';
 
 const Component=styled(Box)(({theme})=>({
 display:'flex',
@@ -16,7 +13,6 @@ cursor:'pointer',
 [theme.breakpoints.down('lg')]:{
    margin:'0',
 }
-
 }));
 const Conatiner = styled(Box)`
 padding :12px 8px;
@@ -29,6 +25,10 @@ font-family: inherit;
 `
 
 const NavBar = () => {
+  const [open, setOpen] = useState(false);
+  const openDialog = () => {
+    setOpen(true);
+}
 
   return (
     <Box style={{background:'#DDFFBC'}}>
@@ -38,11 +38,15 @@ const NavBar = () => {
           navData.map(data =>(
             <Conatiner >
                     <img src={data.url} alt="nav" style={{width:64}} />
-                    <Text>{data.text}</Text>
+                    <Text  onClick={() => openDialog()}
+                    style={{cursor:"pointer"}}
+                    >{data.text}            
+                    </Text>
                     </Conatiner>
             ))
           }
     </Component>
+    <Listdialog open={open} setOpen={setOpen} />
           </Box>
   )
 }

@@ -6,6 +6,7 @@ import LoginDialog from '../login/Logindialog';
 import Profile from './Profile';
 import {Link} from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import SimpleDialog from '../login/SimpleDialog';
 
 const Container = styled(Link)(({ theme }) => ({
     display: 'flex',
@@ -54,6 +55,7 @@ const LoginButton = styled(Button)`
 const CustomButtons = () => {
     
     const [open, setOpen] = useState(false);
+    const [listOpen, setListOpen] = useState(false);
     const {account ,setAccount}= useContext(DataContext);
     const cartDetails = useSelector(state => state.cart);
     const { cartItems } = cartDetails;
@@ -61,20 +63,29 @@ const CustomButtons = () => {
     const openDialog = () => {
         setOpen(true);
     }
+    const simpleDialog = () => {
+        setListOpen(true);
+    }
 
     return (
         <Wrapper>
             {
                 account? <Profile account={account} setAccount={setAccount}/>:
-
                 <LoginButton variant="contained" onClick={() => openDialog()}>
                 Login
                 </LoginButton>
-                
             }
-            <Typography style={{ marginTop: 3, width: 135 ,color:'#DDFFBC'}}>Become a Seller</Typography>
-            <Typography style={{ marginTop: 3 ,color:"#DDFFBC"}}>More</Typography>
+            <Typography style={{ marginTop: 3, width: 135 ,color:'#DDFFBC', cursor:"pointer"}}
             
+            
+            >Become a Seller</Typography>
+
+
+
+            
+            <Typography style={{ marginTop: 3 ,color:"#DDFFBC",cursor:"pointer"}}
+            onClick={()=>simpleDialog()}
+            >More</Typography>
             <Container to ="/cart">
             <Badge badgeContent={cartItems?.length} color="secondary">
                   <ShoppingCart style={{color:'#DDFFBC'}}/>
@@ -82,6 +93,7 @@ const CustomButtons = () => {
                 <Typography style={{ marginLeft: 10 ,color:'#DDFFBC '}}>Cart</Typography>
             </Container>
             <LoginDialog open={open} setOpen={setOpen} />
+            <SimpleDialog listOpen={listOpen} setListOpen={setListOpen}/>
         </Wrapper>
     )
 }

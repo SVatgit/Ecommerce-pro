@@ -38,7 +38,7 @@ const Profile = ({account , setAccount}) => {
       <Component anchorEl={open} open={Boolean(open)} onClose={handleClose}> 
         <MenuItem onClick={() => {handleClose(); LogoutUser();}} style={{color:"#263A29" , background:"#DDFFBB"}}>
           <PowerSettingsNewIcon color="primary" fontSize="small"/>
-          <Logout > Logout</Logout>
+          <Logout >Logout</Logout>
         </MenuItem>
       </Component>
     </>

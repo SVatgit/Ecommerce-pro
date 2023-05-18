@@ -1,5 +1,5 @@
 import { Typography, Box, styled } from '@mui/material';
-
+// import cartImage from '../../image/cartImage.png';
 const Component = styled(Box)`
     width: 80%%;
     height: 65vh;
@@ -19,7 +19,7 @@ const Image = styled('img')({
 
 
 const EmptyCart = () => {
-    const imgurl = 'https://o.remove.bg/downloads/904d5a66-630a-4ebb-8de4-eb7e0689019a/Empty_Cart-removebg-preview.png';
+    const imgurl = "https://o.remove.bg/downloads/205128d8-acb1-40ff-8811-7f777c16e7b6/Empty_Cart-removebg-preview.png";
     
     return (
         <Component >

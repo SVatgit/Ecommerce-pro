@@ -1,7 +1,7 @@
 export const products = [
     { 
         id: 'product1',
-        url: 'https://o.remove.bg/downloads/3e863111-c01d-4fa5-81b0-c172ba4bba15/Brentwood_2L_Stainless_Steel_Electric_Cordless_Tea_Kettle-removebg-preview.png', 
+        url: 'https://rukminim1.flixcart.com/image/150/150/kapoo7k0/electric-kettle/p/6/s/pigeon-favourite-original-imafs7xhj5uwgrh4.jpeg?q=70', 
         detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kapoo7k0/electric-kettle/p/6/s/pigeon-favourite-original-imafs7xhj5uwgrh4.jpeg?q=70',
         title: {
             shortTitle: 'Home & Kitchen',
@@ -19,7 +19,7 @@ export const products = [
     },
     { 
         id: 'product2',
-        url: 'https://o.remove.bg/downloads/6c5d5b6d-f067-4769-bd9c-c7ed1cca6c48/ZZ_Breakfast_Sandwich_Maker_with_Sets_of_Detachable_Non-stick_Plate_S6141A-B-removebg-preview.png', 
+        url: 'https://rukminim1.flixcart.com/image/416/416/kl6wx3k0/sandwich-maker/8/r/d/sandwich-01-flipkart-smartbuy-original-imagydds4zthxt8z.jpeg?q=70', 
         detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kl6wx3k0/sandwich-maker/8/r/d/sandwich-01-flipkart-smartbuy-original-imagydds4zthxt8z.jpeg?q=70',
         title: {
             shortTitle: 'Sandwich Makers',
@@ -37,7 +37,7 @@ export const products = [
     },
     { 
         id: 'product3',
-        url: 'https://o.remove.bg/downloads/de585716-7b31-45bf-80b4-ef1b2a428b31/RitFit_Rubber_Hex_Dumbbell_with_Metal_Handle_For_Free_Weights_Exercises_10-60lbs_Weights_Range_-_25lbs__pair_-removebg-preview.png', 
+        url: 'https://rukminim1.flixcart.com/image/150/150/kohigsw0/resistance-tube/c/s/e/new-adjustable-single-resistance-tube-multicolor-na-ajro-deal-original-imag2xg88mhmwxz5.jpeg?q=70', 
         detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kohigsw0/resistance-tube/c/s/e/new-adjustable-single-resistance-tube-multicolor-na-ajro-deal-original-imag2xg88mhmwxz5.jpeg?q=70', 
         title: {
             shortTitle: 'Fitness Gear',
@@ -55,7 +55,7 @@ export const products = [
     },
     { 
         id: 'product4',
-        url: 'https://o.remove.bg/downloads/1af2a025-457e-47fc-b01d-bc6b95b1bf81/893d0ccc-1f49-4ed8-8318-cb60a0b8060b-removebg-preview.png', 
+        url: 'https://rukminim1.flixcart.com/image/300/300/kll7bm80/smartwatch/c/1/n/43-mo-sw-sense-500-android-ios-molife-original-imagyzyycnpujyjh.jpeg?q=70', 
         detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kll7bm80/smartwatch/c/1/n/43-mo-sw-sense-500-android-ios-molife-original-imagyzyycnpujyjh.jpeg?q=70',
         title: {
             shortTitle: 'Smart Watches',
@@ -73,7 +73,7 @@ export const products = [
     },
     { 
         id: 'product5',
-        url: 'https://o.remove.bg/downloads/3e438fc1-2931-4b21-811c-ea909aa30dc4/Hair_Care_Products-removebg-preview.png',
+        url: 'https://rukminim1.flixcart.com/image/416/416/k3uhhu80/hair-dryer/n/m/t/nova-2800-w-professional-nhp-8220-original-imafmvwfhmzsxdrw.jpeg?q=70',
         detailUrl: 'https://rukminim1.flixcart.com/image/416/416/k3uhhu80/hair-dryer/n/m/t/nova-2800-w-professional-nhp-8220-original-imafmvwfhmzsxdrw.jpeg?q=70', 
         title: {
             shortTitle: 'Trimmers, Dryers & more',
@@ -91,7 +91,7 @@ export const products = [
     },
     { 
         id: 'product6',
-        url: 'https://o.remove.bg/downloads/52b68005-12a4-4049-b202-a463bb71d955/Gaiatop_Small_Table_Fan__6_5_Inch_Ultra-quiet__90__Adjustment_for_Better_Cooling__3_Speeds_Po___-removebg-preview.png',
+        url: 'https://rukminim1.flixcart.com/image/150/150/kk01pjk0/fan/d/d/l/tiktik-quiet-portable-table-fan-zigma-original-imafzg7ftzuckpad.jpeg?q=70',
         detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kk01pjk0/fan/d/d/l/tiktik-quiet-portable-table-fan-zigma-original-imafzg7ftzuckpad.jpeg?q=70', 
         title: {
             shortTitle: 'Table Fans',
@@ -109,7 +109,7 @@ export const products = [
     },
     { 
         id: 'product7',
-        url: 'https://o.remove.bg/downloads/9f17f4df-3835-4dcf-b97c-5259d60feedc/Yamaha_s_tech-packed_YH-L700A_ANC_headphones_feature_3D_Sound__head_tracking_and_much_more_-removebg-preview.png',
+        url: 'https://rukminim1.flixcart.com/image/150/150/kcgk1ow0/headphone/n/u/a/235v2-fast-charging-boat-original-imaftk6us4af7bca.jpeg?q=70',
         detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kcgk1ow0/headphone/n/u/a/235v2-fast-charging-boat-original-imaftk6us4af7bca.jpeg?q=70', 
         title: {
             shortTitle: 'Headphones',

@@ -75,14 +75,10 @@ const CustomButtons = () => {
                 Login
                 </LoginButton>
             }
-            <Typography style={{ marginTop: 3, width: 135 ,color:'#DDFFBC', cursor:"pointer"}}
-            
-            
-            >Become a Seller</Typography>
+            <Container to="/about" style={{textDecoration:"none"}}>
+            <Typography style={{ marginTop: 3, width: 135 ,color:'#DDFFBC', cursor:"pointer"}}>About Us</Typography>
 
-
-
-            
+            </Container>
             <Typography style={{ marginTop: 3 ,color:"#DDFFBC",cursor:"pointer"}}
             onClick={()=>simpleDialog()}
             >More</Typography>

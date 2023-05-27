@@ -6,8 +6,12 @@ import { BrowserRouter, Routes,Route} from "react-router-dom";
 import DetailView from "./components/details/DetailView.jsx";
 import { Cart } from "./components/cart/Cart.jsx";
 import ListPage from "./components/header/ListPage.jsx";
+import About from "./components/Pages/About.jsx";
 
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import ContactFrom from "./components/Pages/ContactFrom.jsx";
 
 
 
@@ -25,6 +29,9 @@ function App() {
             <Route path='/product/:id' element ={<DetailView/>}/>
             <Route path='/cart' element ={<Cart/>}/>
             <Route path='/lastpage' element ={<ListPage/>}/>
+            <Route path='/about' element ={<About/>}/>
+            <Route path='/contact' element ={<ContactFrom/>}/>
+           
           </Routes>
         </Box>
       </BrowserRouter>

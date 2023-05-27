@@ -73,8 +73,8 @@ const Header = () => {
             </Drawer>
         <Component to='/'>
           <img src={logoURL} alt="logo" style={{ width: 40, height: 25 }} />
-          <Box>
-            <SubHeading>
+          <Box >
+            <SubHeading style={{textDecoration:"none"}}>
               Explore&nbsp;
               <Box component="span" style={{ color: "#91C788" }}>
                 Plus

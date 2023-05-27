@@ -9,6 +9,7 @@ const LoginBox = styled(Box)`
   height: 70vh;
   width: 90vh;
   background:#DDFFBC;
+  overflow:hidden;
 `;
 const Image = styled(Box)`
   background: #263A29;
@@ -155,7 +156,7 @@ const Logindialog = ({ open, setOpen }) => {
       PaperProps={{ sx: { maxWidth: "unset" } }}
     >
       <LoginBox>
-        <Box style={{ display: "flex", height: "100%" }}>
+        <Box style={{ display: "flex", height: "122%" }}>
           <Image>
             <Typography variant="h5">{account.heading}</Typography>
             <Typography style={{ marginTop: "20px" }}>

@@ -7,10 +7,10 @@ import {useSelector,useDispatch} from 'react-redux'
 import {getProducts}from "../../redux/actions/productAction"
 import {Link} from 'react-router-dom';
 import { Camera } from './Camera';
-// import {Webcam} from 'react-webcam';
+import {Webcam} from 'react-webcam';
 const SearchContainer = styled(Box)`
 background : #DDFFBC;
-width:38%;
+width:40%;
 border-radius:3px;
 margin-left : 10px;
 display:flex
@@ -33,11 +33,15 @@ position:absolute;
 background:#263A29;
 color:#DDFFBB;
 margin-top:36px;
-
 `
 
 const Search = () => {
     const [text,setText]=useState("");
+    const [isCameraOpen, setIsCameraOpen] = useState(false);
+
+    const Camera = () => {
+      setIsCameraOpen(true);
+  }
     const {products }= useSelector(state => state.getProducts);
     const dispatch = useDispatch();
     useEffect(() => {
@@ -46,9 +50,7 @@ const Search = () => {
   const getText=(text)=>{
       setText(text)
   }
-  const Camerac=()=>{
-    <Camera/>
-  }
+ 
 
   
   return (
@@ -59,7 +61,9 @@ const Search = () => {
         <SearchIconWrapper>
           <SearchIcon/>
           </SearchIconWrapper>
-          <CameraAltIcon onClick={Camerac()} style={{cursor:"pointer", color:"#263A29",padding:"9px", display:"flex"}}/>
+          
+
+          <CameraAltIcon style={{cursor:"pointer", color:"#263A29",marginTop:"9px",marginLeft:"2px"}}/>
           {
             text &&
             <ListWrapper>

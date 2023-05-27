@@ -6,8 +6,7 @@ import cors from 'cors';
  import  Connection  from "./Database/db.js";
 import DefaultData from "./Default.js";
 import Router from "./routes/route.js";
-
-
+import nodemailer from "nodemailer";
 const app = express();
 
 const PORT=5000;

@@ -12,11 +12,6 @@ const Image = styled('img')(({ theme })=>(
             height:100
     }
 }));
-
-
-
-
-
 const responsive = {
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
@@ -47,16 +42,11 @@ const Banner = () => {
   containerClass="carousel-container"
   dotListClass="custom-dot-list-style"
   itemClass="carousel-item-padding-40-px"
-  
   >
-
     {
         bannerData.map(data=>(
-            <Image src={data.url} alt="" />
-        ))
+            <Image src={data.url} alt="" />))
     }
-  </Carousel>
-  )
+  </Carousel>)
 }
-
 export default Banner
